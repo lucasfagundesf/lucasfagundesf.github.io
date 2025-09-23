@@ -9,6 +9,7 @@ import portfolio from "../../assets/portfolio.png";
 import brendadotarot from "../../assets/Brendadotarot.png";
 import pomodoro from "../../assets/pomodoro.png";
 import pokedex from "../../assets/pokedex.png";
+import UnderProtection from "../../assets/Under_Protection.png";
 import { FaHashtag } from "react-icons/fa";
 
 export function Projetos() {
@@ -35,6 +36,13 @@ export function Projetos() {
             <h1>projetos completos</h1>
           </div>
           <div className="projetos">
+            <Card
+              img={UnderProtection}
+              title={"Under Protection"}
+              tags={"Wordpress Elementor "}
+              desc={"Site de empresa de Cyber Segurança "}
+              href={"https://underprotection.com.br/"}
+            />
             <Card
               img={brendadotarot}
               title={"Brenda Do tarot"}

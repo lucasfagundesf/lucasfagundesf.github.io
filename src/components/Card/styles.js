@@ -18,6 +18,8 @@ export const Container = styled.div`
   }
   img {
     width: 100%;
+    height: 200px;
+    object-fit: cover;
   }
   .tags {
     padding: 0.8rem 1.6rem;
