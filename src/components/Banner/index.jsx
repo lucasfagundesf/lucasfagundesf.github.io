@@ -21,7 +21,8 @@ export function Banner() {
         <div className="above">
           <div className="box"></div>
           <p>
-            Atualmente trabalhando no <strong>Baratie App</strong>
+            Atualmente trabalhando na construção de{" "}
+            <strong>Novax Engenharia</strong>
           </p>
         </div>
       </div>

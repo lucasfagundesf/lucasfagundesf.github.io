@@ -11,6 +11,7 @@ import pomodoro from "../../assets/pomodoro.png";
 import pokedex from "../../assets/pokedex.png";
 import portfolio from "../../assets/portfolio.png";
 import brendadotarot from "../../assets/Brendadotarot.png";
+import UnderProtection from "../../assets/Under_Protection.png";
 import viewMore from "../../assets/~~_.svg";
 import seta from "../../assets/seta.svg";
 import skills from "../../assets/skills.png";
@@ -47,6 +48,13 @@ export function Home() {
             view all
             <img className="seta" src={viewMore} alt="seta" />
           </Link>
+          <Card
+            img={UnderProtection}
+            title={"Under Protection"}
+            tags={"Wordpress Elementor "}
+            desc={"Site de empresa de Cyber Segurança "}
+            href={"https://underprotection.com.br/"}
+          />
           <Card
             img={brendadotarot}
             title={"Brenda Do tarot"}
