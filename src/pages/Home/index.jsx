@@ -7,7 +7,6 @@ import { Button } from "../../components/Button";
 import { Banner } from "../../components/Banner";
 import { Skill } from "../../components/Skill";
 import quote from "../../assets/quote.svg";
-import pomodoro from "../../assets/pomodoro.png";
 import pokedex from "../../assets/pokedex.png";
 import portfolio from "../../assets/portfolio.png";
 import brendadotarot from "../../assets/Brendadotarot.png";
@@ -69,14 +68,6 @@ export function Home() {
             desc={"É onde você está acessando agora"}
             href={"/home"}
             href2={""}
-          />
-          <Card
-            img={pomodoro}
-            title={"Focus Time"}
-            tags={"HTML CSS JS"}
-            href={"https://lucasfagundesf.github.io/focus-time2.0/"}
-            href2={"https://github.com/lucasfagundesf/focus-time2.0"}
-            desc={"timer pomodoro com sons ambientes"}
           />
           <Card
             img={pokedex}
