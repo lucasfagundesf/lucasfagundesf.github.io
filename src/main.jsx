@@ -12,7 +12,7 @@ import { Contatos } from "./pages/Contatos";
 
 const router = createBrowserRouter([
   {
-    path: "/Portfolio", 
+    path: "/",
     element: <Home />,
   },
   {
@@ -35,5 +35,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <GlobalStyles />
       <RouterProvider router={router} />
     </ThemeProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
