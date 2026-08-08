@@ -19,6 +19,9 @@ export const Container = styled.div`
   img {
     width: 100%;
   }
+    .boxImg {
+    width: 30rem;
+    max-height: 20.1rem;
   .tags {
     padding: 0.8rem 1.6rem;
     font-size: 1.6rem;

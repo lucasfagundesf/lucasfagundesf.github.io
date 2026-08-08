@@ -7,7 +7,7 @@ import { Button } from "../../components/Button";
 import { Banner } from "../../components/Banner";
 import { Skill } from "../../components/Skill";
 import quote from "../../assets/quote.svg";
-import pokedex from "../../assets/pokedex.png";
+import novax from "../../assets/novax-eng.png";
 import portfolio from "../../assets/portfolio.png";
 import brendadotarot from "../../assets/Brendadotarot.png";
 import UnderProtection from "../../assets/Under_Protection.png";
@@ -20,6 +20,8 @@ import { IoIosMail } from "react-icons/io";
 import { Footer } from "../../components/Footer";
 import { SideMenu } from "../../components/SideMenu";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";   
+import "swiper/css";
 
 export function Home() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -47,36 +49,46 @@ export function Home() {
             view all
             <img className="seta" src={viewMore} alt="seta" />
           </Link>
-          <Card
-            img={UnderProtection}
-            title={"Under Protection"}
-            tags={"Wordpress Elementor "}
-            desc={"Site de empresa de Cyber Segurança "}
-            href={"https://underprotection.com.br/"}
-          />
-          <Card
-            img={brendadotarot}
-            title={"Brenda Do tarot"}
-            tags={"Wordpress Elementor "}
-            desc={"Site de Taróloga com atendimento Online "}
-            href={"https://brendadotarot.com.br/"}
-          />
-          <Card
-            img={portfolio}
-            title={"Portfolio"}
-            tags={"React StyledComponents "}
-            desc={"É onde você está acessando agora"}
-            href={"/home"}
-            href2={""}
-          />
-          <Card
-            img={pokedex}
-            title={"Pokedex"}
-            tags={"HTML CSS JS "}
-            href={`https://lucasfagundesf.github.io/Projeto-pokedex/`}
-            href2={"https://github.com/lucasfagundesf/Projeto-pokedex"}
-            desc={"A famosa pokedex com pokemons shinys"}
-          />
+          <Swiper
+            spaceBetween={20}
+            slidesPerView={3}
+            >
+            <SwiperSlide>
+              <Card
+                img={novax}
+                title={"Novax Engenharia"}
+                tags={"Wordpress Elementor "}
+                desc={"Site de empresa de ar-condicionado e refrigeração "}
+                href={"https://novaxengenharia.com.br/"}
+              />
+              <Card
+                img={UnderProtection}
+                title={"Under Protection"}
+                tags={"Wordpress Elementor "}
+                desc={"Site de empresa de Cyber Segurança "}
+                href={"https://underprotection.com.br/"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card
+                img={brendadotarot}
+                title={"Brenda Do tarot"}
+                tags={"Wordpress Elementor "}
+                desc={"Site de Taróloga com atendimento Online "}
+                href={"https://brendadotarot.com.br/"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card
+                img={portfolio}
+                title={"Portfolio"}
+                tags={"React StyledComponents "}
+                desc={"É onde você está acessando agora"}
+                href={"/home"}
+                href2={""}
+              />
+            </SwiperSlide>
+          </Swiper>
         </section>
         <section id="skill">
           <h2>
