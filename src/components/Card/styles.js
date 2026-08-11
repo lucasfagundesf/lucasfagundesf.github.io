@@ -20,8 +20,10 @@ export const Container = styled.div`
     width: 100%;
   }
     .boxImg {
-    width: 30rem;
-    max-height: 20.1rem;
+    width: 100%;
+    height: 20.1rem;
+    object-fit: cover;
+}
   .tags {
     padding: 0.8rem 1.6rem;
     font-size: 1.6rem;

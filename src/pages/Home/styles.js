@@ -133,6 +133,9 @@ export const Container = styled.div`
         #about{
             margin: auto;
         }
+         a {
+            text-decoration: none;
+        }
     }
     #contato{
         .message{

@@ -61,6 +61,8 @@ export function Home() {
                 desc={"Site de empresa de ar-condicionado e refrigeração "}
                 href={"https://novaxengenharia.com.br/"}
               />
+            </SwiperSlide>
+            <SwiperSlide>
               <Card
                 img={UnderProtection}
                 title={"Under Protection"}

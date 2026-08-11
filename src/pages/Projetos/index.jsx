@@ -8,6 +8,7 @@ import barra from "../../assets/barra.svg";
 import portfolio from "../../assets/portfolio.png";
 import brendadotarot from "../../assets/Brendadotarot.png";
 import pomodoro from "../../assets/pomodoro.png";
+import novax from "../../assets/novax-eng.png";
 import pokedex from "../../assets/pokedex.png";
 import UnderProtection from "../../assets/Under_Protection.png";
 import { FaHashtag } from "react-icons/fa";
@@ -37,6 +38,13 @@ export function Projetos() {
           </div>
           <div className="projetos">
             <Card
+              img={novax}
+              title={"Novax Engenharia"}
+              tags={"Wordpress Elementor "}
+              desc={"Site de empresa de ar-condicionado e refrigeração "}
+              href={"https://novaxengenharia.com.br/"}
+            />
+            <Card
               img={UnderProtection}
               title={"Under Protection"}
               tags={"Wordpress Elementor "}
@@ -56,6 +64,7 @@ export function Projetos() {
               tags={"React StyledComponents "}
               desc={"É onde você está acessando agora"}
             />
+            
           </div>
         </section>
         <section id="small">

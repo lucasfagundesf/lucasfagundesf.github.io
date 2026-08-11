@@ -37,12 +37,16 @@ export const Container = styled.div`
             color: ${({ theme }) => theme.COLORS.FONT};
             font-size: 1.6rem;
         }
+            .projetos{
+                display: flex;
+                flex-direction: row;
+                
     }
     @media (min-width: ${DEVICE_BREAKPOINTS.MD}) {
         .projetos{
             gap: 1.6rem;
             display: flex;
-            justify-content: center;
+            justify-content: left;
             flex-wrap: wrap;
         }
     }

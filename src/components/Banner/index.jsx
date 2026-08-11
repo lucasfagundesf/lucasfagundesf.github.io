@@ -22,7 +22,7 @@ export function Banner() {
           <div className="box"></div>
           <p>
             Atualmente trabalhando na construção de{" "}
-            <strong>Novax Engenharia</strong>
+            <strong>Zeragon</strong>
           </p>
         </div>
       </div>

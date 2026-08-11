@@ -17,7 +17,7 @@ export function Header({ onOpenMenu }) {
       <List>
         <li onClick={scrollToTop}>
           <HiHashtag />
-          <Link to="/Portfolio">home</Link>
+          <Link to="/">home</Link>
         </li>
         <li onClick={scrollToTop}>
           <HiHashtag />
