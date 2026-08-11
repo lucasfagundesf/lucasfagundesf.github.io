@@ -5,11 +5,10 @@ export const Container = styled.div`
     width: 100%;
     height: 100%;
     
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_GRAY};
 
     main{
         max-width: 100rem;
-        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_GRAY};
         margin: auto;
     }
     section{

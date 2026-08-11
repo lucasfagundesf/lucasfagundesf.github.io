@@ -9,4 +9,12 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
+
+    .char,
+    .word,
+    .line {
+        display: inline-block;
+        font-size: inherit;
+        line-height: inherit;
+    }
 `;

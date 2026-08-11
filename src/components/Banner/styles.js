@@ -6,15 +6,14 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  margin-top: 6rem;
+  margin-top: 17rem;
   justify-content: space-around;
-  align-items: center;
-
+  
   .text {
     display: flex;
     flex-direction: column;
     gap: 3.4rem;
-    max-width: 45rem;
+    max-width: 46rem;
     padding-left: 2rem;
 
     h1,
@@ -31,6 +30,7 @@ export const Container = styled.div`
     p {
       color: ${({ theme }) => theme.COLORS.FONT};
       font-size: 1.6rem;
+      width: 40rem;
     }
   }
   .perfil {
@@ -59,7 +59,7 @@ export const Container = styled.div`
       font-size: 1.6rem;
       color: ${({ theme }) => theme.COLORS.FONT};
       strong {
-        color: ${({ theme }) => theme.COLORS.TITLE};
+        color: ${({ theme }) => theme.COLORS.PRIMARY};
         font-size: 1.6rem;
         font-weight: ${({ theme }) => theme.WEIGHT.MEDIUM};
       }
