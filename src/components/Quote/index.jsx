@@ -1,9 +1,11 @@
 import {Container} from './styles';
-
+import { useTextReveal } from '../../animations/useTextReveal';
+import PropTypes from 'prop-types';
 
 export function Quote({quote, author, icon}) {
+    const ref = useTextReveal();
     return (
-        <Container>
+        <Container ref={ref}>
             <div className="quote" id='quote1'>
                 <img src={icon} alt="icon Quote" />
             </div>
@@ -19,3 +21,14 @@ export function Quote({quote, author, icon}) {
         </Container>
     )
 }
+
+Quote.propTypes = {
+    quote: PropTypes.string.isRequired,
+    author: PropTypes.string,
+    icon: PropTypes.string,
+};
+
+Quote.defaultProps = {
+    author: '',
+    icon: undefined,
+};

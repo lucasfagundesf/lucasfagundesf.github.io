@@ -6,19 +6,19 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  margin-top: 17rem;
+  margin-top: 20rem;
   justify-content: space-around;
   
   .text {
     display: flex;
     flex-direction: column;
     gap: 3.4rem;
-    max-width: 46rem;
     padding-left: 2rem;
 
     h1,
     strong {
-      font-size: 3rem;
+      width: 100%;
+      font-size: 5rem;
       font-weight: ${({ theme }) => theme.WEIGHT.MEDIUM};
     }
     h1 {
@@ -29,8 +29,8 @@ export const Container = styled.div`
     }
     p {
       color: ${({ theme }) => theme.COLORS.FONT};
-      font-size: 1.6rem;
-      width: 40rem;
+      font-size: 3rem;
+      width: 87%;
     }
   }
   .perfil {
@@ -38,7 +38,7 @@ export const Container = styled.div`
       text-align: center;
       img {
         position: relative;
-        max-width: 35rem;
+        max-width: 50rem;
       }
     }
     .above {

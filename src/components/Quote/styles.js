@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakPoints'
 
 export const Container = styled.div`
-    width: 90%;
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@ export const Container = styled.div`
     text-align: center;
     margin: auto;
     margin-top: 10rem;
-    margin-bottom: 7rem;
+    margin-bottom: 10rem;
     max-width: 70rem;
     color: ${({ theme }) => theme.COLORS.FONT};
 

@@ -10,7 +10,7 @@ export const Container = styled.header`
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 4rem;
+    height: 10rem;
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_GRAY};
     a{
         text-decoration: none; 
@@ -67,7 +67,7 @@ export const Container = styled.header`
         
         }
         li>a:hover{
-            color: ${({ theme }) => theme.COLORS.TITLE};
+            color: ${({ theme }) => theme.COLORS.PRIMARY};
             font-weight: ${({ theme }) => theme.WEIGHT.MEDIUM};
         }
         

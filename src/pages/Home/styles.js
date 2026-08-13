@@ -8,7 +8,10 @@ export const Container = styled.div`
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_GRAY};
 
     main{
-        max-width: 100rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 120rem;
         margin: auto;
     }
     section{

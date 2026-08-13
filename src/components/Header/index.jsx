@@ -4,6 +4,8 @@ import { HiHashtag } from "react-icons/hi2";
 import logo from "../../assets/Logo.svg";
 import menu from "../../assets/menu.svg";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+
 export function Header({ onOpenMenu }) {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -38,3 +40,7 @@ export function Header({ onOpenMenu }) {
     </Container>
   );
 }
+
+Header.propTypes = {
+  onOpenMenu: PropTypes.func.isRequired,
+};
