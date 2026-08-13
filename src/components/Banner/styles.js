@@ -18,7 +18,7 @@ export const Container = styled.div`
     h1,
     strong {
       width: 100%;
-      font-size: 5rem;
+      font-size: 4.5rem;
       font-weight: ${({ theme }) => theme.WEIGHT.MEDIUM};
     }
     h1 {
@@ -29,7 +29,7 @@ export const Container = styled.div`
     }
     p {
       color: ${({ theme }) => theme.COLORS.FONT};
-      font-size: 3rem;
+      font-size: 2.5rem;
       width: 87%;
     }
   }

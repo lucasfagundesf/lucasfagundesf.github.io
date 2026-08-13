@@ -16,8 +16,7 @@ export function Banner() {
           Lucas Fagundes <strong>Desenvolvedor Front-end</strong>
         </h1>
         <p ref={introTextRef}>
-          Ele constroi websites responsivos onde a tecnologia encontra a
-          criatividade
+          Desenvolvimento de interfaces modernas, responsivas e experiências digitais com foco em performance e interação.
         </p>
       </div>
       <div ref={boxRef} className="perfil">

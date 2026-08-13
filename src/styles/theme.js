@@ -1,9 +1,9 @@
 export default {
     COLORS: {
         PRIMARY: "#DA7223",
-        FONT: "#ABB2BF",
+        FONT: "#A8B3C7",
         BACKGROUND: "#282C33",
-        BACKGROUND_GRAY: "#2D3037",
+        BACKGROUND_GRAY: "#0F1117",
         TITLE: "#FFFFFF",
         BACKGROUND_DARKMODE: "#4C535F",
 
