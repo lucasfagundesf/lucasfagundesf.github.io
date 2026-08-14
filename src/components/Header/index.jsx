@@ -16,7 +16,7 @@ export function Header({ onOpenMenu }) {
         <img src={logo} alt="Logo" />
         <h1>Lucas Fagundes</h1>
       </div>
-      <List>
+      <List >
         <li onClick={scrollToTop}>
           <HiHashtag />
           <Link to="/">home</Link>

@@ -4,8 +4,8 @@ import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakPoints";
 export const Container = styled.div`
   width: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 3rem;
+  flex-direction: row;
+  gap: 5rem;
   margin-top: 20rem;
   justify-content: space-around;
   
@@ -31,6 +31,37 @@ export const Container = styled.div`
       color: ${({ theme }) => theme.COLORS.FONT};
       font-size: 2.5rem;
       width: 87%;
+    }
+      .CTA {
+        display: flex;
+        gap: 2rem;
+          a {
+          font-size: 1.6rem;
+          padding: 0.8rem 2.5rem;
+          border: 1px solid ${({ theme }) => theme.COLORS.PRIMARY};
+          text-decoration: none;
+          color: ${({ theme }) => theme.COLORS.TITLE};
+          &:hover {
+            background-color: ${({ theme }) => theme.COLORS.PRIMARY};
+            color: ${({ theme }) => theme.COLORS.TITLE};
+          }
+        }
+      }  
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: start;
+      gap: 2rem;
+      li {  
+        padding: 0.5rem 1rem;
+        font-size: 1.6rem;
+        color: ${({ theme }) => theme.COLORS.FONT};
+      }
+        li:hover{
+        cursor: default;
+          background-color: ${({ theme }) => theme.COLORS.PRIMARY};
+          color: ${({ theme }) => theme.COLORS.TITLE};
+        }
     }
   }
   .perfil {

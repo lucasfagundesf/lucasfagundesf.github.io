@@ -7,15 +7,15 @@ export const Container = styled.header`
     z-index: 2;
     padding: 1rem ;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     width: 100%;
     height: 10rem;
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_GRAY};
     a{
         text-decoration: none; 
-        font-size: 1.6rem;
+        font-size: 2.5rem;
         color: ${({ theme }) => theme.COLORS.FONT};
+    }
     }
     li{
         display: none;
@@ -28,11 +28,11 @@ export const Container = styled.header`
         gap: .8rem;
 
         img {
-            width: 1.6rem;
-            height: 1.6rem;
+            width: 3rem;
+            height: 3rem;
         }
         h1{
-            font-size: 1.6rem;
+            font-size: 3rem;
             font-weight: ${({ theme }) => theme.WEIGHT.BOLD};
             color: ${({ theme }) => theme.COLORS.TITLE};
         }
@@ -45,7 +45,6 @@ export const Container = styled.header`
         
         ul{
         display: flex;
-        text-align: center;
         justify-content: space-between;
         gap: 3.2rem;        
         list-style: none;
