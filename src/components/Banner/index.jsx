@@ -1,5 +1,7 @@
 import { Container } from "./styles";
 import { Link } from "react-router-dom";
+import { LuFolderCode } from "react-icons/lu";
+import { LuContact } from "react-icons/lu";
 import { useTextReveal } from "../../animations/useTextReveal";
 import { useBoxReveal } from "../../animations/useBoxReveal";
 import photo from "../../assets/photo.png";
@@ -17,14 +19,16 @@ export function Banner() {
           Lucas Fagundes <strong>Desenvolvedor Front-end</strong>
         </h1>
         <p ref={introTextRef}>
-          Desenvolvimento de interfaces modernas, responsivas e experiências digitais com foco em performance e interação.
+          Desenvolvimento de interfaces modernas e responsivas, com foco em performance, interação e experiência digital.
         </p>
         <div className="CTA">
           <Link to={"/projetos"}>
-          Ver Projetos
+          <LuFolderCode className="icon" />
+          Projetos
           </Link>
           <Link to={"/contatos"}>
-          Ver Contatos
+          <LuContact className="icon" />
+          Contato
           </Link>
           
         </div>

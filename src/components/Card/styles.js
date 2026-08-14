@@ -5,7 +5,7 @@ export const Container = styled.div`
   margin: auto;
   margin-top: 4.8rem;
   max-width: 30rem;
-  max-height: 42rem;
+  max-height: 45rem;
   color: ${({ theme }) => theme.COLORS.FONT};
   border: 1px solid ${({ theme }) => theme.COLORS.FONT};
 
@@ -23,17 +23,20 @@ export const Container = styled.div`
     width: 100%;
     height: 20.1rem;
     object-fit: cover;
+    object-position: left;
+    border-bottom: 1px solid ${({ theme }) => theme.COLORS.FONT};
 }
   .tags {
-    padding: 0.8rem 1.6rem;
+    padding: 0.5rem 0rem;
     font-size: 1.6rem;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
+    color: ${({ theme }) => theme.COLORS.FONT};
+    
   }
 
   .cont {
     display: flex;
     flex-direction: column;
+    gap: 1.6rem;
     padding: 1.6rem;
   }
   h2 {
@@ -52,29 +55,6 @@ export const Container = styled.div`
   button:hover {
     background-color: ${({ theme }) => theme.COLORS.HOVER_PRIMARY};
   }
-  .btnGray {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    padding: 0.8rem 1rem;
-    font-size: 1.3rem;
-    background-color: transparent;
-    color: ${({ theme }) => theme.COLORS.FONT};
-    border: 1px solid ${({ theme }) => theme.COLORS.FONTS};
-
-    svg {
-      min-width: 1rem;
-      min-height: 1rem;
-      max-height: 2rem;
-      max-width: 1.6rem;
-      color: ${({ theme }) => theme.COLORS.FONT};
-    }
-  }
-  .btnGray:hover {
-    background-color: ${({ theme }) => theme.COLORS.HOVER_GRAY};
-  }
-
   @media (min-width: ${DEVICE_BREAKPOINTS.MD}) {
     margin: 0;
     margin-top: 4.8rem;

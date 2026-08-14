@@ -11,7 +11,6 @@ import novax from "../../assets/novax-eng.png";
 import portfolio from "../../assets/portfolio.png";
 import brendadotarot from "../../assets/Brendadotarot.png";
 import UnderProtection from "../../assets/Under_Protection.png";
-import viewMore from "../../assets/~~_.svg";
 import seta from "../../assets/seta.svg";
 import skills from "../../assets/skills.png";
 import about from "../../assets/about.png";
@@ -45,20 +44,21 @@ export function Home() {
             <FaHashtag />
             projects
           </h2>
-          <Link to="/projetos">
+          {/* Quando mais projetos forem adicionados, descomente o link abaixo */}
+          {/* <Link to="/projetos">
             view all
             <img className="seta" src={viewMore} alt="seta" />
-          </Link>
+          </Link> */}
           <Swiper
-            spaceBetween={20}
+            spaceBetween={10}
             slidesPerView={3}
             >
             <SwiperSlide>
               <Card
                 img={novax}
                 title={"Novax Engenharia"}
-                tags={"Wordpress Elementor "}
-                desc={"Site de empresa de ar-condicionado e refrigeração "}
+                tags={"Wordpress · Elementor "}
+                desc={"Website institucional - Engenharia e climatização "}
                 href={"https://novaxengenharia.com.br/"}
               />
             </SwiperSlide>
@@ -66,8 +66,8 @@ export function Home() {
               <Card
                 img={UnderProtection}
                 title={"Under Protection"}
-                tags={"Wordpress Elementor "}
-                desc={"Site de empresa de Cyber Segurança "}
+                tags={"Wordpress · Elementor "}
+                desc={"Website institucional - Cibersegurança "}
                 href={"https://underprotection.com.br/"}
               />
             </SwiperSlide>
@@ -75,8 +75,8 @@ export function Home() {
               <Card
                 img={brendadotarot}
                 title={"Brenda Do tarot"}
-                tags={"Wordpress Elementor "}
-                desc={"Site de Taróloga com atendimento Online "}
+                tags={"Wordpress · Elementor "}
+                desc={"Website profissional - Atendimento online "}
                 href={"https://brendadotarot.com.br/"}
               />
             </SwiperSlide>
@@ -84,10 +84,9 @@ export function Home() {
               <Card
                 img={portfolio}
                 title={"Portfolio"}
-                tags={"React StyledComponents "}
+                tags={"React · StyledComponents · GSAP"}
                 desc={"É onde você está acessando agora"}
-                href={"/home"}
-                href2={""}
+                href={"/"}
               />
             </SwiperSlide>
           </Swiper>

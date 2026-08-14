@@ -28,8 +28,8 @@ export const Container = styled.header`
         gap: .8rem;
 
         img {
-            width: 3rem;
-            height: 3rem;
+            width: 2.5rem;
+            height: 2.5rem;
         }
         h1{
             font-size: 3rem;

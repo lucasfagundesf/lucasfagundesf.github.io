@@ -5,6 +5,7 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 5rem;
   margin-top: 20rem;
   justify-content: space-around;
@@ -32,10 +33,20 @@ export const Container = styled.div`
       font-size: 2.5rem;
       width: 87%;
     }
+      
       .CTA {
         display: flex;
+        justify-content: start;
+        align-items: center;
         gap: 2rem;
+        .icon {
+          width: 2rem;
+          height: 2rem;
+        }
           a {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
           font-size: 1.6rem;
           padding: 0.8rem 2.5rem;
           border: 1px solid ${({ theme }) => theme.COLORS.PRIMARY};
@@ -48,7 +59,7 @@ export const Container = styled.div`
         }
       }  
     ul {
-      list-style: none;
+      list-style: circle;
       display: flex;
       justify-content: start;
       gap: 2rem;
@@ -56,17 +67,17 @@ export const Container = styled.div`
         padding: 0.5rem 1rem;
         font-size: 1.6rem;
         color: ${({ theme }) => theme.COLORS.FONT};
-      }
-        li:hover{
-        cursor: default;
-          background-color: ${({ theme }) => theme.COLORS.PRIMARY};
-          color: ${({ theme }) => theme.COLORS.TITLE};
+        &:hover {
+          cursor: default;
+          color: ${({ theme }) => theme.COLORS.PRIMARY};
         }
+      }
+        
     }
   }
   .perfil {
     .person {
-      text-align: center;
+      margin-top: 0px;
       img {
         position: relative;
         max-width: 50rem;
@@ -74,7 +85,7 @@ export const Container = styled.div`
     }
     .above {
       margin: auto;
-      width: 90%;
+      width: 100%;
       display: flex;
       align-items: center;
       gap: 2rem;
