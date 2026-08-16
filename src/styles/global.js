@@ -10,11 +10,5 @@ export default createGlobalStyle`
         box-sizing: border-box;
     }
 
-    .char,
-    .word,
-    .line {
-        display: inline-block;
-        font-size: inherit;
-        line-height: inherit;
-    }
+    
 `;

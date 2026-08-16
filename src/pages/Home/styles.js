@@ -4,8 +4,12 @@ import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakPoints';
 export const Container = styled.div`
     width: 100%;
     height: 100%;
+
+    #smooth-wrapper,#smooth-content {
+        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_GRAY};
+    }
     
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_GRAY};
+    
 
     main{
         display: flex;
@@ -45,6 +49,7 @@ export const Container = styled.div`
         }
         > h2{
             padding: 1rem;
+            padding-left: 0;
             background-color: ${({ theme }) => theme.COLORS.BACKGROUND_GRAY};
             position: absolute;
             top: -3rem;

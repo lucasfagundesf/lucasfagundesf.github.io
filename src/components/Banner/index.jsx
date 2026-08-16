@@ -32,13 +32,7 @@ export function Banner() {
           </Link>
           
         </div>
-        <ul>
-          <li>React</li>
-          <li>JavaScript</li>
-          <li>WordPress</li>
-          <li>HubSpot</li>
-          <li>GSAP</li>
-        </ul>
+        
       </div>
       <div ref={boxRef} className="perfil">
         <div  className="person">
