@@ -11,6 +11,7 @@ export function Card({ img, title, desc, tags, href}) {
       <div className="cont">
         <h2>{title}</h2>
         <p>{desc}</p>
+        <hr/>
         <div className="tags">{tags}</div>
         <div className="btn">
           <a href={href} target="blank">

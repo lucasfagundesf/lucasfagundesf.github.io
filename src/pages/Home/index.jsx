@@ -68,7 +68,7 @@ export function Home() {
                 view all
                 <img className="seta" src={viewMore} alt="seta" />
               </Link> */}
-              <Swiper spaceBetween={10} slidesPerView={3}>
+              <Swiper spaceBetween={10} slidesPerView={2}>
                 <SwiperSlide>
                   <Card
                     img={novax}

@@ -4,28 +4,28 @@ import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakPoints";
 export const Container = styled.div`
   margin: auto;
   margin-top: 4.8rem;
-  max-width: 30rem;
-  max-height: 45rem;
+  padding-bottom: 2rem;
+  max-width: 50rem;
+  height: 55rem;
+  border-radius: 24px;
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
   color: ${({ theme }) => theme.COLORS.FONT};
   border: 1px solid ${({ theme }) => theme.COLORS.FONT};
 
   a {
     text-decoration: none;
-  }
-  .preview {
-    width: 100%;
-    max-height: 20.1rem;
-  }
-  img {
-    width: 100%;
+    background-color: ${({theme}) => theme.COLORS.PRIMARY};
   }
     .boxImg {
-    width: 100%;
-    height: 20.1rem;
-    object-fit: cover;
-    object-position: left;
-    border-bottom: 1px solid ${({ theme }) => theme.COLORS.FONT};
-}
+      border-radius: 24px 24px 0 0;
+      width: 100%;
+      height: 27rem;
+      object-fit: cover;
+      object-position: center;
+    }
+    hr {
+      width: 20rem;
+    }
   .tags {
     padding: 0.5rem 0rem;
     font-size: 1.6rem;
@@ -34,10 +34,11 @@ export const Container = styled.div`
   }
 
   .cont {
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
-    padding: 1.6rem;
+    padding-left: 4rem;
   }
   h2 {
     font-size: 2.4rem;
@@ -45,15 +46,18 @@ export const Container = styled.div`
     color: ${({ theme }) => theme.COLORS.TITLE};
   }
   p {
+    font-weight: ${({ theme}) => theme.WEIGHT.SEMIBOLD};
     font-size: 1.6rem;
     padding-bottom: 1.6rem;
+    color: ${({theme}) => theme.COLORS.PRIMARY};
   }
   .btn {
     display: flex;
     gap: 1.6rem;
+    
   }
   button:hover {
-    background-color: ${({ theme }) => theme.COLORS.HOVER_PRIMARY};
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_GRAY};
   }
   @media (min-width: ${DEVICE_BREAKPOINTS.MD}) {
     margin: 0;
