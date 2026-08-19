@@ -2,7 +2,7 @@ import { Container } from "./styles";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import seta from "../../assets/Arrow.svg";
-import circleBorder from "../../assets/Circle border.svg";
+import circleBorder from "../../assets/circleBorder.svg";
 import topic from "../../assets/topic.svg";
 import { scrollTimeLine } from "../../animations/scrollTimeLine";
 
