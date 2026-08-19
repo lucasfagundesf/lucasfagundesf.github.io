@@ -35,11 +35,10 @@ export const skills = {
 }
 export const commands = [
     "help",
-  "skills",
-  "frontend",
-  "cms",
-  "motion",
-  "tools",
-  "capabilities",
-  "clear",
+    "frontend",
+    "cms",
+    "motion",
+    "tools",
+    "capabilities",
+    "clear",
 ]

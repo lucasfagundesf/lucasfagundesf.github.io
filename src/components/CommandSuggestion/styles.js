@@ -21,7 +21,7 @@ export const Button = styled.button`
   color: #888;
 
   font-family: inherit;
-  font-size: 12px;
+  font-size: 2rem;
 
   cursor: pointer;
 

@@ -29,12 +29,12 @@ export const Container = styled.div`
     background: #666;
   }
 .command {
-  font-size: 1.4rem;
+  font-size: 2rem;
   color:  ${({theme}) => theme.COLORS.FONT};
 
   span {
     color:  ${({theme}) => theme.COLORS.PRIMARY};
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 }
   `;

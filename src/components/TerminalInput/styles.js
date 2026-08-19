@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
 
 export const Prompt = styled.span`
   color: ${({theme}) => theme.COLORS.PRIMARY};
-  font-size: 1.4rem;
+  font-size: 2rem;
   white-space: nowrap;
 `;
 
@@ -28,7 +28,7 @@ export const Input = styled.input`
   color: ${({theme}) => theme.COLORS.FONT};
 
   font-family: inherit;
-  font-size: 1.4rem;
+  font-size: 2rem;
 
   caret-color: ${({theme}) => theme.COLORS.FONT};
 `;
