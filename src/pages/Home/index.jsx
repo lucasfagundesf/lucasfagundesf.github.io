@@ -7,14 +7,12 @@ import { Card } from "../../components/Card";
 import { Button } from "../../components/Button";
 import { Banner } from "../../components/Banner";
 import { Jornada } from "../../components/Jornada";
-import { Skill } from "../../components/Skill";
 // import quote from "../../assets/quote.svg";
 import novax from "../../assets/novax-eng.png";
 import portfolio from "../../assets/portfolio.png";
 import brendadotarot from "../../assets/Brendadotarot.png";
 import UnderProtection from "../../assets/Under_Protection.png";
 import seta from "../../assets/seta.svg";
-import skills from "../../assets/skills.png";
 import about from "../../assets/about.png";
 import { FaHashtag } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
@@ -24,6 +22,7 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { useGSAP } from "@gsap/react";
+import { Skill } from "../../components/Skill";
 
 export function Home() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -112,16 +111,7 @@ export function Home() {
                 <FaHashtag />
                 skills
               </h2>
-              <div className="skillsSection">
-                <img className="skills" src={skills} alt="" />
-                <div className="cardSkill">
-                  <Skill title={"Languages"} list={"JavaScript"} />
-                  <Skill title={"Databases"} list={"SQLite Oracle "} />
-                  <Skill title={"Tools"} list={"VSCode Figma Git "} />
-                  <Skill title={"Other"} list={"HTML CSS SASS "} />
-                  <Skill title={"Frameworks"} list={"React "} />
-                </div>
-              </div>
+              <Skill/>
             </section>
             <section id="sobre">
               <h2>
