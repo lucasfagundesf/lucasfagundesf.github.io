@@ -19,7 +19,7 @@ export const Container = styled.div`
     h1,
     strong {
       width: 100%;
-      font-size: 4.5rem;
+      font-size: 4rem;
       font-weight: ${({ theme }) => theme.WEIGHT.MEDIUM};
     }
     h1 {

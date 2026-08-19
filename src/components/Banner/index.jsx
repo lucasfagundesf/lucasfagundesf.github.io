@@ -16,7 +16,7 @@ export function Banner() {
     <Container>
       <div className="text">
         <h1 ref={titleRef}>
-          Lucas Fagundes <strong>Desenvolvedor Front-end</strong>
+          Lucas Fagundes <strong> Desenvolvedor Front-end</strong>
         </h1>
         <p ref={introTextRef}>
           Desenvolvimento de interfaces modernas e responsivas, com foco em performance, interação e experiência digital.
