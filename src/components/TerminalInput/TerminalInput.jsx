@@ -10,7 +10,6 @@ const TerminalInput = forwardRef(
 
       <Input
         ref={ref}
-        autoFocus
         value={value}
         onChange={(e) => setInput(e.target.value)}
         onKeyDown={onKeyDown}
